@@ -62,7 +62,7 @@ const Contact = () => {
                 <div className='flex justify-center lg:justify-start'>
                     <div className='flex flex-col gap-4 lg:items-start'>
                         <a
-                            href='https://www.linkedin.com/in/muffinscorp/'
+                            href='https://www.linkedin.com/company/muffinscorp/'
                             className='flex items-center gap-2'
                             target='_blank'
                             rel='noopener noreferrer'
@@ -81,7 +81,7 @@ const Contact = () => {
                             <span>MuffinsCorporation</span>
                         </a>
                         <a
-                            href='https://www.instagram.com/in/muffinscorp/'
+                            href='https://www.instagram.com/muffinscorp/'
                             className='flex items-center gap-2'
                             target='_blank'
                             rel='noopener noreferrer'
