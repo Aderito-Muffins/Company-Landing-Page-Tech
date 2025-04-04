@@ -72,7 +72,7 @@ const Contact = () => {
                         </a>
 
                         <a
-                            href='https://www.facebook.com/in/muffinscorporation/'
+                            href='https://www.facebook.com/muffinscorporation/'
                             className='flex items-center gap-2'
                             target='_blank'
                             rel='noopener noreferrer'
