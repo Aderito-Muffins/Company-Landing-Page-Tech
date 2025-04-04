@@ -40,7 +40,7 @@ const Navbar = () => {
                         )}
                     />
                     <span className='hidden text-lg font-semibold md:block'>
-                        MUFFINS Corp
+                        Muffins Corp.
                     </span>
                 </Link>
                 <div className='flex items-center gap-5'>

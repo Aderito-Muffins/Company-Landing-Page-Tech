@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://saasstellar.nader.run/sitemap-0.xml</loc></sitemap></sitemapindex>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://muffinscorp.com/</loc>
+        <lastmod>2024-04-04</lastmod>
+    </url>
+    <url>
+        <loc>https://muffinscorp.com/favicon.ico</loc>
+        <lastmod>2024-04-04</lastmod>
+    </url>
+    <url>
+        <loc>https://muffinscorp.com/favicon-32x32.png</loc>
+        <lastmod>2024-04-04</lastmod>
+    </url>
+    <url>
+        <loc>https://muffinscorp.com/favicon-16x16.png</loc>
+        <lastmod>2024-04-04</lastmod>
+    </url>
+    <url>
+        <loc>https://muffinscorp.com/sitemap-0.xml</loc>
+        <lastmod>2024-04-04</lastmod>
+    </url>
+</urlset>
