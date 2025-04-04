@@ -33,6 +33,12 @@ export const meta: MetaFunction = () => {
         },
         {
             tagName: 'link',
+            rel: 'shortcut icon',
+            href: '/favicon.ico',
+            type: 'image/x-icon',
+        },
+        {
+            tagName: 'link',
             rel: 'apple-touch-icon',
             sizes: '180x180',
             href: '/apple-touch-icon.png',
