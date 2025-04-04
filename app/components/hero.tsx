@@ -1,4 +1,5 @@
 import { useForm } from '@formspree/react'
+import { useRef } from 'react'
 import { motion } from 'framer-motion'
 import { Loader2Icon, MoveRightIcon } from 'lucide-react'
 import { cn } from '~/lib/utils'
@@ -10,6 +11,16 @@ import useTheme from '~/hooks/use-theme'
 const Hero = () => {
     const [state, handleSubmit] = useForm('mjvqrzpz')
     const [theme] = useTheme()
+    const contactRef = useRef(null)
+
+    const scrollToBottom = (e: React.MouseEvent) => {
+        e.preventDefault() // Impede o envio do formulário
+
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth',
+        })
+    }
 
     return (
         <main className='mx-auto my-10 flex min-h-[calc(100vh-73px)] max-w-2xl flex-col justify-center gap-6 px-5 text-center lg:my-0'>
@@ -84,51 +95,24 @@ const Hero = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-                onSubmit={handleSubmit}
                 className='mx-auto mt-8 flex w-full max-w-sm flex-col items-end space-y-2'
             >
                 <div className='flex w-full max-w-sm flex-col items-start gap-1.5'>
-                    <Label
+                    <label
                         className='text-left text-muted-foreground'
                         htmlFor='email'
                     >
                         Pronto para revolucionar seu negócio?
-                    </Label>
-                    <Input
-                        required
-                        type='email'
-                        id='email'
-                        placeholder='seu.email@exemplo.com'
-                        name='email'
-                    />
+                    </label>
                 </div>
-                {!state.succeeded && (
-                    <Button
-                        className={cn(
-                            'flex w-full justify-between',
-                            state.submitting && 'justify-center'
-                        )}
-                        type='submit'
-                        disabled={state.submitting}
-                    >
-                        {state.submitting && (
-                            <Loader2Icon className='mr-2 h-4 w-4 animate-spin' />
-                        )}
-                        {state.submitting && 'Enviando...'}
-                        {!state.submitting && 'Junte-se à Revolução'}
-                        {!state.submitting && (
-                            <MoveRightIcon className='h-4 w-4' />
-                        )}
-                    </Button>
-                )}
-                {state.succeeded && (
-                    <Button
-                        variant={'secondary'}
-                        className='pointer-events-none w-full'
-                    >
-                        Você se inscreveu com sucesso! 🎉
-                    </Button>
-                )}
+
+                <Button
+                    onClick={scrollToBottom}
+                    className='flex w-full justify-between'
+                >
+                    Junte-se à Revolução
+                    <MoveRightIcon className='h-4 w-4' />
+                </Button>
             </motion.form>
         </main>
     )

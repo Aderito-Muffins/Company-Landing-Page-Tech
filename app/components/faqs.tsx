@@ -11,36 +11,36 @@ import { buttonVariants } from './ui/button'
 
 const faqs = [
     {
-        question: 'Quais serviços a Muffins Corporation oferece?',
+        question: 'Quais serviços a Muffins Corp. oferece?',
         answer: 'Oferecemos desenvolvimento de software personalizado, marketing digital, análise de dados, testes de segurança, design e identidade visual, além de soluções inovadoras para empresas de diferentes tamanhos.',
     },
     {
-        question: 'A Muffins Corporation desenvolve plataformas sob demanda?',
+        question: 'A Muffins Corp. desenvolve plataformas sob demanda?',
         answer: 'Sim, criamos plataformas personalizadas que atendem às necessidades específicas de cada cliente, garantindo inovação e funcionalidade.',
     },
     {
-        question: 'Quais plataformas a Muffins Corporation detém?',
-        answer: 'A Muffins Corporation controla duas startups: a Muffins Store, uma plataforma de loja Online e MarketPlace e a Muffins e-Commerce Platform, uma plataforma de comércio eletrônico. Além dessas, também somos proprietários de outras soluções inovadoras.',
+        question: 'Quais plataformas a Muffins Corp. detém?',
+        answer: 'A Muffins Corp. controla duas startups: a Muffins Store, uma plataforma de loja Online e MarketPlace e a Muffins e-Commerce Platform, uma plataforma de comércio eletrônico. Além dessas, também somos proprietários de outras soluções inovadoras.',
     },
     {
-        question: 'Como funciona o suporte oferecido pela Muffins Corporation?',
+        question: 'Como funciona o suporte oferecido pela Muffins Corp.?',
         answer: 'Nosso suporte está disponível para todos os clientes, garantindo assistência técnica, manutenção contínua e atualizações conforme necessário.',
     },
     {
         question:
-            'Posso integrar as soluções da Muffins Corporation aos sistemas da minha empresa?',
+            'Posso integrar as soluções da Muffins Corp. aos sistemas da minha empresa?',
         answer: 'Sim, nossas soluções são projetadas para integração com sistemas já existentes, otimizando operações e garantindo eficiência.',
     },
     {
-        question: 'A Muffins Corporation trabalha com análise de dados?',
+        question: 'A Muffins Corp. trabalha com análise de dados?',
         answer: 'Sim, fornecemos serviços avançados de análise de dados para ajudar empresas a tomar decisões informadas e estratégicas.',
     },
     {
-        question: 'Quais são as áreas de atuação da Muffins Corporation?',
+        question: 'Quais são as áreas de atuação da Muffins Corp.?',
         answer: 'Atuamos em diversos setores, incluindo desenvolvimento de software, marketing digital, consultoria em segurança cibernética, design gráfico e gerenciamento de dados.',
     },
     {
-        question: 'Como posso começar um projeto com a Muffins Corporation?',
+        question: 'Como posso começar um projeto com a Muffins Corp.?',
         answer: 'Entre em contato conosco através do nosso site ou e-mail. Faremos uma análise detalhada de suas necessidades e elaboraremos a melhor solução personalizada para o seu negócio.',
     },
     {

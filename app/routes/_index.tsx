@@ -12,16 +12,16 @@ import InspirationalTexts from '~/components/textMessage'
 
 export const meta: MetaFunction = () => {
     return [
-        { title: 'MUFFINS Corporation' },
+        { title: 'Muffins Corp.' },
         {
             name: 'description',
             content:
-                'Empowering businesses with cutting-edge SaaS solutions and custom software development. Streamline operations, enhance productivity, and drive innovation with MUFFINS Corporation.',
+                'Muffins Corp. oferece soluções SaaS inovadoras e desenvolvimento de software personalizado para empresas. Melhore a produtividade, otimize operações e impulsione a inovação com nossas soluções. | Muffins Corp. provides cutting-edge SaaS solutions and custom software development for businesses. Improve productivity, optimize operations, and drive innovation with our solutions.',
         },
         {
             name: 'keywords',
             content:
-                'SaaS solutions, custom software development, business innovation, workflow optimization, cloud-based software, productivity tools, data-driven decisions, business growth, efficiency tools, software development, SaaS platform, seamless workflows, business efficiency, growth strategies, cloud solutions, enterprise software, technology solutions, digital transformation',
+                'soluções SaaS,Muffins Corp,Muffins AI, Muffins Store, Aderito Muffins,Muffins e-Commerce,chatBot, desenvolvimento de software personalizado, inovação empresarial, otimização de fluxo de trabalho, software baseado na nuvem, ferramentas de produtividade, decisões baseadas em dados, crescimento empresarial, ferramentas de eficiência, desenvolvimento de software, plataforma SaaS, fluxos de trabalho contínuos, eficiência empresarial, estratégias de crescimento, soluções na nuvem, software empresarial, soluções tecnológicas, transformação digital | SaaS solutions, custom software development, business innovation, workflow optimization, cloud-based software, productivity tools, data-driven decisions, business growth, efficiency tools, software development, SaaS platform, seamless workflows, business efficiency, growth strategies, cloud solutions, enterprise software, technology solutions, digital transformation.',
         },
         {
             name: 'robots',
@@ -29,7 +29,7 @@ export const meta: MetaFunction = () => {
         },
         {
             name: 'author',
-            content: 'MUFFINS Corporation',
+            content: 'Muffins Corp.',
         },
         {
             tagName: 'link',
@@ -73,12 +73,12 @@ export const meta: MetaFunction = () => {
         {
             property: 'og:title',
             content:
-                'MUFFINS Corporation - Empowering Businesses with SaaS and Custom Software Solutions',
+                'Muffins Corp. - Soluções SaaS e Software Personalizado para Empresas | Muffins Corp. - SaaS Solutions and Custom Software for Businesses',
         },
         {
             property: 'og:description',
             content:
-                'Discover how MUFFINS Corporation can help you streamline operations, enhance productivity, and drive innovation with our SaaS and custom software development services.',
+                'Descubra como a Muffins Corp. pode ajudar a otimizar suas operações, melhorar a produtividade e impulsionar a inovação com nossos serviços de desenvolvimento de software e soluções SaaS. | Discover how Muffins Corp. can help you streamline operations, enhance productivity, and drive innovation with our custom software development and SaaS solutions.',
         },
         {
             property: 'og:image',
@@ -100,12 +100,12 @@ export const meta: MetaFunction = () => {
         {
             name: 'twitter:title',
             content:
-                'MUFFINS Corporation - Empowering Businesses with SaaS and Custom Software Solutions',
+                'Muffins Corp. - Soluções SaaS e Software Personalizado para Empresas | Muffins Corp. - SaaS Solutions and Custom Software for Businesses',
         },
         {
             name: 'twitter:description',
             content:
-                'Discover how MUFFINS Corporation can help you streamline operations, enhance productivity, and drive innovation with our SaaS and custom software development services.',
+                'Descubra como a Muffins Corp. pode ajudar a otimizar suas operações, melhorar a produtividade e impulsionar a inovação com nossos serviços de desenvolvimento de software e soluções SaaS. | Discover how Muffins Corp. can help you streamline operations, enhance productivity, and drive innovation with our custom software development and SaaS solutions.',
         },
         {
             name: 'twitter:image',

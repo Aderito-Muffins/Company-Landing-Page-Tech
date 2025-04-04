@@ -48,8 +48,8 @@ const Banner = () => {
                             </h1>
                         </div>
                         <p className='text-center text-lg text-muted-foreground lg:text-left'>
-                            Na MUFFINS Corporation, transformamos ideias em
-                            realidade com soluções tecnológicas que impulsionam
+                            Na Muffins Corp., transformamos ideias em realidade
+                            com soluções tecnológicas que impulsionam
                             resultados. Seu sucesso é nossa missão!
                         </p>
                     </div>

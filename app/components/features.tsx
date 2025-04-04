@@ -109,7 +109,7 @@ const Features = () => {
                 </div>
                 <p className='text-lg text-muted-foreground'>
                     <span className='hidden lg:block'>
-                        Na MUFFINS Corporation, não entregamos apenas soluções —
+                        Na Muffins Corp., não entregamos apenas soluções —
                         criamos experiências que impulsionam o crescimento, a
                         inovação e o sucesso do seu negócio. Descubra como
                         podemos transformar seus desafios em oportunidades
@@ -117,7 +117,7 @@ const Features = () => {
                     </span>
                     <span className='block lg:hidden'>
                         Soluções que revolucionam, resultados que inspiram.
-                        Conheça o poder da inovação com a MUFFINS Corporation.
+                        Conheça o poder da inovação com a Muffins Corp..
                     </span>
                 </p>
             </div>
