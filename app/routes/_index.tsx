@@ -10,6 +10,7 @@ import Navbar from '~/components/navbar'
 import Tech from '~/components/tech'
 import Product from '~/components/product'
 import InspirationalTexts from '~/components/textMessage'
+import Team from '~/components/team'
 
 export const meta: MetaFunction = () => {
     return [
@@ -140,6 +141,7 @@ export default function Index() {
             <Features />
             <Tech />
             <Banner />
+            <Team />
             <FAQs />
             <Contact />
             <Footer />
