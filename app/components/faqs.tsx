@@ -32,10 +32,6 @@ const faqs = [
         answer: 'Sim, nossas soluções são projetadas para integração com sistemas já existentes, otimizando operações e garantindo eficiência.',
     },
     {
-        question: 'A Muffins Corp. trabalha com análise de dados?',
-        answer: 'Sim, fornecemos serviços avançados de análise de dados para ajudar empresas a tomar decisões informadas e estratégicas.',
-    },
-    {
         question: 'Quais são as áreas de atuação da Muffins Corp.?',
         answer: 'Atuamos em diversos setores, incluindo desenvolvimento de software, marketing digital, consultoria em segurança cibernética, design gráfico e gerenciamento de dados.',
     },

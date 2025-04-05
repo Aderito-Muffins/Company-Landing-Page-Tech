@@ -6,11 +6,22 @@ import { Textarea } from './ui/textarea'
 import Discord from './icons/discord'
 import FacebookIcon from './icons/facebook'
 import InstagramIcon from './icons/instagram'
-import { useForm } from '@formspree/react'
 import { motion } from 'framer-motion'
 
 const Contact = () => {
-    const [state, handleSubmit] = useForm('xpzgladz')
+    const handleFormSubmit = (e: any) => {
+        e.preventDefault()
+
+        const name = e.target.name.value
+        const email = e.target['contact-email'].value
+        const message = e.target.message.value
+
+        // Cria a URL do 'mailto' com os campos preenchidos
+        const mailtoLink = `mailto:contact@muffinscorp.com?subject=Mensagem de ${name}&body=E-mail: ${email}%0D%0A%0D%0A${message}`
+
+        // Abre o cliente de e-mail com o conteúdo do formulário
+        window.location.href = mailtoLink
+    }
 
     // Animações de aparição (de baixo para cima)
     const animateUp = {
@@ -105,7 +116,7 @@ const Contact = () => {
 
             {/* Formulário com animação contínua */}
             <motion.form
-                onSubmit={handleSubmit}
+                onSubmit={handleFormSubmit}
                 className='gradient-border relative flex w-full max-w-xl flex-grow basis-0 flex-col gap-4 rounded-md bg-gradient-to-br from-white/5 to-transparent p-6 before:bg-gradient-to-br before:from-white/5 before:to-transparent'
                 variants={formAnimation}
                 animate='animate'
@@ -156,25 +167,9 @@ const Contact = () => {
                         name='message'
                     />
                 </div>
-                {!state.succeeded && (
-                    <Button variant={'secondary'} disabled={state.submitting}>
-                        {state.submitting && (
-                            <Loader2Icon className='mr-2 h-4 w-4 animate-spin' />
-                        )}
-                        {state.submitting && 'Enviando'}
-                        {!state.succeeded &&
-                            !state.submitting &&
-                            'Enviar mensagem'}
-                    </Button>
-                )}
-                {state.succeeded && (
-                    <Button
-                        variant={'secondary'}
-                        className='pointer-events-none'
-                    >
-                        Mensagem enviada!
-                    </Button>
-                )}
+                <Button type='submit' variant={'secondary'}>
+                    Enviar mensagem
+                </Button>
             </motion.form>
         </section>
     )

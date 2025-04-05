@@ -73,13 +73,6 @@ const featuresData: FeatureCardProps[] = [
         icon: <AtSignIcon className='spin-animation text-pink-500' />,
         backgroundColor: 'from-pink-500/20 to-pink-500/5',
     },
-    {
-        title: 'Plataformas Inovadoras',
-        description:
-            'Revolucione seu negócio com nossas plataformas exclusivas: Muffins Store para vendas online e MUFFINS e-Commerce para gestão completa de lojas virtuais. Tecnologia que impulsiona resultados!',
-        icon: <BoxIcon size={28} className='spin-animation text-purple-500' />,
-        backgroundColor: 'from-purple-500/20 to-purple-500/5',
-    },
 ]
 
 const Features = () => {
