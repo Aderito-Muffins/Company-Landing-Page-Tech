@@ -8,6 +8,7 @@ import Footer from '~/components/footer'
 import Hero from '~/components/hero'
 import Navbar from '~/components/navbar'
 import Tech from '~/components/tech'
+import Product from '~/components/product'
 import InspirationalTexts from '~/components/textMessage'
 
 export const meta: MetaFunction = () => {
@@ -134,9 +135,10 @@ export default function Index() {
             <Navbar />
             <Hero />
             {/* <Cms /> */}
-            <InspirationalTexts />
+            {/* <InspirationalTexts /> */}
+            <Product />
             <Features />
-            <Tech />
+            {/* <Tech /> */}
             <Banner />
             <FAQs />
             <Contact />
