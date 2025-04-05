@@ -138,7 +138,7 @@ export default function Index() {
             {/* <InspirationalTexts /> */}
             <Product />
             <Features />
-            {/* <Tech /> */}
+            <Tech />
             <Banner />
             <FAQs />
             <Contact />
