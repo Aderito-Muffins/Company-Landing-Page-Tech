@@ -38,7 +38,7 @@ const Product = () => {
                         />
                         <div>
                             <h3 className='text-lg font-semibold'>
-                                Muffins AI
+                                Muffins AI (BETA)
                             </h3>
                             <p className='text-sm text-muted-foreground'>
                                 Automatize tarefas com inteligência.
@@ -57,7 +57,7 @@ const Product = () => {
                         />
                         <div>
                             <h3 className='text-lg font-semibold'>
-                                Muffins e-Commerce
+                                Muffins e-Commerce (BETA)
                             </h3>
                             <p className='text-sm text-muted-foreground'>
                                 Sua loja online pronta para escalar.
