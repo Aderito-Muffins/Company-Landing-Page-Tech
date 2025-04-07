@@ -4,7 +4,7 @@ import teaser from '../assets/teaser.mp4'
 const Teaser = () => {
     return (
         <div>
-            <div className='h-[1px] w-full bg-gradient-to-r from-primary to-transparent'></div>
+            <div className='animate-fadeInOut h-[1px] w-full bg-gradient-to-r from-primary to-transparent'></div>
 
             <main className='relative mx-auto my-0 flex min-h-[60vh] w-full items-center justify-center'>
                 {/* Container do vídeo */}
@@ -17,8 +17,10 @@ const Teaser = () => {
                         loop
                         muted
                     />
+                    {/* Gradiente vertical à direita */}
+                    {/* Gradiente vertical à direita com animação */}
+                    <div className='animate-fadeInOut absolute right-0 top-0 h-full w-[1px] bg-gradient-to-b from-primary to-transparent' />
                 </div>
-
                 {/* Gradiente suave ao redor do vídeo */}
                 <div className='absolute inset-0 bg-gradient-to-t from-black via-transparent to-black'></div>
 
@@ -55,7 +57,7 @@ const Teaser = () => {
                     </motion.p>
                 </div>
             </main>
-            <div className='h-[1px] w-full bg-gradient-to-l from-primary to-transparent'></div>
+            <div className='animate-fadeInOut h-[1px] w-full bg-gradient-to-l from-primary to-transparent'></div>
         </div>
     )
 }
