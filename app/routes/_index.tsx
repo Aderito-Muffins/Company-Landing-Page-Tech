@@ -11,7 +11,7 @@ import Tech from '~/components/tech'
 import Product from '~/components/product'
 import InspirationalTexts from '~/components/textMessage'
 import Team from '~/components/team'
-
+import Teaser from '~/components/teaser'
 export const meta: MetaFunction = () => {
     return [
         { title: 'Muffins Corp.' },
@@ -135,8 +135,10 @@ export default function Index() {
         <div className='dark:bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,hsla(var(--primary)_/_30%),#ffffff00)]'>
             <Navbar />
             <Hero />
+
             {/* <Cms /> */}
             {/* <InspirationalTexts /> */}
+            <Teaser />
             <Product />
             <Features />
             <Tech />

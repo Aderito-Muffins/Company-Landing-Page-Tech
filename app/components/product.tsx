@@ -48,7 +48,7 @@ const Product = () => {
 
                     <a
                         href='https://ecommerce.muffinscorp.com'
-                        className='group flex items-center gap-3 rounded-xl border px-5 py-3 shadow transition hover:scale-105 hover:shadow-lg'
+                        className='group flex items-center gap-3 rounded-xl border px-5 py-2 shadow transition hover:scale-105 hover:shadow-lg'
                     >
                         <img
                             src={muffinsEcom}
