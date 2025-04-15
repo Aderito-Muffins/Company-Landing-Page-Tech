@@ -1,4 +1,3 @@
-'use client'
 import { Partytown } from '@builder.io/partytown/react'
 import { type LinksFunction } from '@remix-run/node'
 import {
