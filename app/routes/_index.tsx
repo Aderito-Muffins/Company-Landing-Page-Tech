@@ -12,6 +12,7 @@ import Product from '~/components/product'
 import InspirationalTexts from '~/components/textMessage'
 import Team from '~/components/team'
 import Teaser from '~/components/teaser'
+
 export const meta: MetaFunction = () => {
     return [
         { title: 'Muffins Corp.' },
