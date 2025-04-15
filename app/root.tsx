@@ -20,10 +20,12 @@ import { StatsigProvider, useClientAsyncInit } from '@statsig/react-bindings'
 import { StatsigAutoCapturePlugin } from '@statsig/web-analytics'
 import { StatsigSessionReplayPlugin } from '@statsig/session-replay'
 
+// Links para o CSS
 export const links: LinksFunction = () => [
     { rel: 'stylesheet', href: stylesheet },
 ]
 
+// Loader para carregar variáveis de ambiente
 export async function loader() {
     return json({
         ENV: {
@@ -32,6 +34,7 @@ export async function loader() {
     })
 }
 
+// Componente para inicializar Statsig
 export function MyStatsig({ children }: { children: React.ReactNode }) {
     const { client } = useClientAsyncInit(
         'client-tixYyU6MrwkTucSnlh8gYc6HUhFvBuQoR5OBHoaTCkz',
@@ -44,23 +47,39 @@ export function MyStatsig({ children }: { children: React.ReactNode }) {
         }
     )
 
+    // Verifica se o client está pronto antes de renderizar
+    if (!client) {
+        return null // Substitua por um spinner ou carregamento
+    }
+
     return <StatsigProvider client={client}>{children}</StatsigProvider>
 }
 
+// Componente Principal
 export default function App({
     children,
 }: Readonly<{ children: React.ReactNode }>) {
     const { ENV } = useLoaderData<typeof loader>()
+
+    // Atualiza o tema ao carregar
     useLayoutEffect(() => {
-        changeTheme(getTheme())
+        const theme = getTheme()
+        if (theme) {
+            changeTheme(theme)
+        }
     }, [])
+
     return (
         <html lang='pt-PT' className='dark'>
+            {/* Inicialização do Highlight para monitoramento */}
             <HighlightInit
                 projectId={ENV.HIGHLIGHT_PROJECT_ID}
                 serviceName='my-remix-frontend'
                 tracingOrigins
-                networkRecording={{ enabled: true, recordHeadersAndBody: true }}
+                networkRecording={{
+                    enabled: true,
+                    recordHeadersAndBody: true,
+                }}
             />
             <head>
                 <meta charSet='utf-8' />
@@ -69,7 +88,7 @@ export default function App({
                     content='width=device-width,initial-scale=1'
                 />
                 <Partytown debug={true} forward={['dataLayer.push']} />
-                {/* Script do Google Analytics com Partytown */}
+                {/* Google Analytics com Partytown */}
                 <script
                     type='text/partytown'
                     async
