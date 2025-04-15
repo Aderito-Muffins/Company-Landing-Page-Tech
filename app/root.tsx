@@ -1,3 +1,4 @@
+'use client'
 import { Partytown } from '@builder.io/partytown/react'
 import { type LinksFunction } from '@remix-run/node'
 import {
@@ -15,6 +16,10 @@ import { useLayoutEffect } from 'react'
 import { changeTheme, getTheme } from './hooks/use-theme'
 import { HighlightInit } from '@highlight-run/remix/client'
 import { json } from '@remix-run/node'
+import React from 'react'
+import { StatsigProvider, useClientAsyncInit } from '@statsig/react-bindings'
+import { StatsigAutoCapturePlugin } from '@statsig/web-analytics'
+import { StatsigSessionReplayPlugin } from '@statsig/session-replay'
 
 export const links: LinksFunction = () => [
     { rel: 'stylesheet', href: stylesheet },
@@ -28,7 +33,24 @@ export async function loader() {
     })
 }
 
-export default function App() {
+export function MyStatsig({ children }: { children: React.ReactNode }) {
+    const { client } = useClientAsyncInit(
+        'client-tixYyU6MrwkTucSnlh8gYc6HUhFvBuQoR5OBHoaTCkz',
+        { userID: 'a-user' },
+        {
+            plugins: [
+                new StatsigAutoCapturePlugin(),
+                new StatsigSessionReplayPlugin(),
+            ],
+        }
+    )
+
+    return <StatsigProvider client={client}>{children}</StatsigProvider>
+}
+
+export default function App({
+    children,
+}: Readonly<{ children: React.ReactNode }>) {
     const { ENV } = useLoaderData<typeof loader>()
     useLayoutEffect(() => {
         changeTheme(getTheme())
@@ -66,6 +88,7 @@ export default function App() {
                 <Links />
             </head>
             <body className='relative overflow-x-hidden bg-background font-dm antialiased'>
+                <MyStatsig>{children}</MyStatsig>
                 <Outlet />
                 <ScrollRestoration />
                 <Scripts />

@@ -11,7 +11,7 @@
         "partytown": "partytown copylib public/~partytown"
     },
     "dependencies": {
-        "@builder.io/partytown": "^0.10.2",
+        "@builder.io/partytown": "^0.10.3",
         "@formspree/react": "^2.5.1",
         "@highlight-run/remix": "^2.0.44",
         "@radix-ui/react-accordion": "^1.2.0",
@@ -25,6 +25,9 @@
         "@remix-run/node": "^2.10.2",
         "@remix-run/react": "^2.10.2",
         "@remix-run/serve": "^2.10.2",
+        "@statsig/react-bindings": "^3.15.4",
+        "@statsig/session-replay": "^3.15.4",
+        "@statsig/web-analytics": "^3.15.4",
         "@vercel/analytics": "^1.3.1",
         "class-variance-authority": "^0.7.0",
         "clsx": "^2.1.1",
