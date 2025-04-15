@@ -69,29 +69,32 @@ export default function App({
                     content='width=device-width,initial-scale=1'
                 />
                 <Partytown debug={true} forward={['dataLayer.push']} />
+                {/* Script do Google Analytics com Partytown */}
                 <script
                     type='text/partytown'
                     async
                     src='https://www.googletagmanager.com/gtag/js?id=G-8D3Q6ZQE0Z'
-                />
+                ></script>
                 <script
                     type='text/partytown'
                     dangerouslySetInnerHTML={{
-                        __html: `window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'G-8D3Q6ZQE0Z');`,
+                        __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-8D3Q6ZQE0Z');
+            `,
                     }}
                 />
                 <Meta />
                 <Links />
             </head>
             <body className='relative overflow-x-hidden bg-background font-dm antialiased'>
-                <MyStatsig>{children}</MyStatsig>
                 <Outlet />
                 <ScrollRestoration />
                 <Scripts />
                 <TailwindIndicator />
+                <MyStatsig>{children}</MyStatsig>
                 {process.env.NODE_ENV === 'production' && <Analytics />}
             </body>
         </html>
