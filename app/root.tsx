@@ -34,7 +34,7 @@ export default function App() {
         changeTheme(getTheme())
     }, [])
     return (
-        <html lang='en' className='dark'>
+        <html lang='pt-PT' className='dark'>
             <HighlightInit
                 projectId={ENV.HIGHLIGHT_PROJECT_ID}
                 serviceName='my-remix-frontend'
@@ -51,7 +51,7 @@ export default function App() {
                 <script
                     type='text/partytown'
                     async
-                    src='https://www.googletagmanager.com/gtag/js?id=G-6JV9TN499V'
+                    src='https://www.googletagmanager.com/gtag/js?id=G-8D3Q6ZQE0Z'
                 />
                 <script
                     type='text/partytown'
@@ -59,7 +59,7 @@ export default function App() {
                         __html: `window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
-                        gtag('config', 'G-6JV9TN499V');`,
+                        gtag('config', 'G-8D3Q6ZQE0Z');`,
                     }}
                 />
                 <Meta />
