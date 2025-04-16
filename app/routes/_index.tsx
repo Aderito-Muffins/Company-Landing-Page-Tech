@@ -77,7 +77,7 @@ export const meta: MetaFunction = () => {
         },
         {
             name: 'theme-color',
-            content: '#ffffff',
+            content: '#000000',
         },
         {
             property: 'og:title',
