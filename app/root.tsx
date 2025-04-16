@@ -67,11 +67,11 @@ export default function App() {
                 <Links />
             </head>
             <body className='relative overflow-x-hidden bg-background font-dm antialiased'>
+                <Outlet />
+                <ScrollRestoration />
+                <Scripts />
+                <TailwindIndicator />
                 <MyStatsig>
-                    <Outlet />
-                    <ScrollRestoration />
-                    <Scripts />
-                    <TailwindIndicator />
                     {process.env.NODE_ENV === 'production' && <Analytics />}
                 </MyStatsig>
             </body>
