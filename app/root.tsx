@@ -29,9 +29,7 @@ export async function loader() {
     })
 }
 
-export default function App({
-    children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function App() {
     const { ENV } = useLoaderData<typeof loader>()
     useLayoutEffect(() => {
         changeTheme(getTheme())
@@ -69,12 +67,13 @@ export default function App({
                 <Links />
             </head>
             <body className='relative overflow-x-hidden bg-background font-dm antialiased'>
-                <Outlet />
-                <ScrollRestoration />
-                <Scripts />
-                <TailwindIndicator />
-                <MyStatsig>{children}</MyStatsig>
-                {process.env.NODE_ENV === 'production' && <Analytics />}
+                <MyStatsig>
+                    <Outlet />
+                    <ScrollRestoration />
+                    <Scripts />
+                    <TailwindIndicator />
+                    {process.env.NODE_ENV === 'production' && <Analytics />}
+                </MyStatsig>
             </body>
         </html>
     )
