@@ -35,50 +35,48 @@ export default function App() {
         changeTheme(getTheme())
     }, []) // Alterado de useLayoutEffect para useEffect
     return (
-        <MyStatsig>
-            <html lang='pt-PT' className='dark'>
-                <HighlightInit
-                    projectId={ENV.HIGHLIGHT_PROJECT_ID}
-                    serviceName='my-remix-frontend'
-                    tracingOrigins
-                    networkRecording={{
-                        enabled: true,
-                        recordHeadersAndBody: true,
-                    }}
+        <html lang='pt-PT' className='dark'>
+            <HighlightInit
+                projectId={ENV.HIGHLIGHT_PROJECT_ID}
+                serviceName='my-remix-frontend'
+                tracingOrigins
+                networkRecording={{
+                    enabled: true,
+                    recordHeadersAndBody: true,
+                }}
+            />
+            <head>
+                <meta charSet='utf-8' />
+                <meta
+                    name='viewport'
+                    content='width=device-width,initial-scale=1'
                 />
-                <head>
-                    <meta charSet='utf-8' />
-                    <meta
-                        name='viewport'
-                        content='width=device-width,initial-scale=1'
-                    />
-                    <Partytown debug={true} forward={['dataLayer.push']} />
-                    <script
-                        type='text/partytown'
-                        async
-                        src='https://www.googletagmanager.com/gtag/js?id=G-8D3Q6ZQE0Z'
-                    />
-                    <script
-                        type='text/partytown'
-                        dangerouslySetInnerHTML={{
-                            __html: `window.dataLayer = window.dataLayer || [];
+                <Partytown debug={true} forward={['dataLayer.push']} />
+                <script
+                    type='text/partytown'
+                    async
+                    src='https://www.googletagmanager.com/gtag/js?id=G-8D3Q6ZQE0Z'
+                />
+                <script
+                    type='text/partytown'
+                    dangerouslySetInnerHTML={{
+                        __html: `window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
                         gtag('config', 'G-8D3Q6ZQE0Z');`,
-                        }}
-                    />
-                    <Meta />
-                    <Links />
-                </head>
+                    }}
+                />
+                <Meta />
+                <Links />
+            </head>
 
-                <body className='relative overflow-x-hidden bg-background font-dm antialiased'>
-                    <Outlet />
-                    <ScrollRestoration />
-                    <Scripts />
-                    <TailwindIndicator />
-                    {process.env.NODE_ENV === 'production' && <Analytics />}
-                </body>
-            </html>
-        </MyStatsig>
+            <body className='relative overflow-x-hidden bg-background font-dm antialiased'>
+                <Outlet />
+                <ScrollRestoration />
+                <Scripts />
+                <TailwindIndicator />
+                {process.env.NODE_ENV === 'production' && <Analytics />}
+            </body>
+        </html>
     )
 }
