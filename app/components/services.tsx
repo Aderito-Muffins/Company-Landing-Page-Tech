@@ -13,7 +13,7 @@ import {
 import { type FeatureCardProps } from '~/types/feature-card'
 import FeatureCard from './feature-card'
 
-const featuresData: FeatureCardProps[] = [
+const serviceData: FeatureCardProps[] = [
     {
         title: 'Desenvolvimento de Websites',
         description:
@@ -75,9 +75,9 @@ const featuresData: FeatureCardProps[] = [
     },
 ]
 
-const Features = () => {
+const Services = () => {
     return (
-        <section className='mx-auto mt-48 max-w-7xl px-5'>
+        <section id='services' className='mx-auto mt-48 max-w-7xl px-5'>
             <div className='mx-auto flex max-w-2xl flex-col gap-6 text-center'>
                 <div>
                     <span className='rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary dark:bg-primary/25'>
@@ -116,7 +116,7 @@ const Features = () => {
             </div>
             <div>
                 <ul className='mt-20 grid place-content-center gap-20 md:grid-cols-2 lg:grid-cols-3'>
-                    {featuresData.map((feature, i) => (
+                    {serviceData.map((feature, i) => (
                         <li key={i}>
                             <FeatureCard
                                 title={feature.title}
@@ -132,4 +132,4 @@ const Features = () => {
     )
 }
 
-export default Features
+export default Services

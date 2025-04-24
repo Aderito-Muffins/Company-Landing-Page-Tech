@@ -3,7 +3,7 @@ import Banner from '~/components/banner'
 import Cms from '~/components/cms'
 import Contact from '~/components/contact'
 import FAQs from '~/components/faqs'
-import Services from '~/components/services'
+import Features from '~/components/services'
 import Footer from '~/components/footer'
 import Hero from '~/components/hero'
 import Navbar from '~/components/navbar'
@@ -12,7 +12,9 @@ import Product from '~/components/product'
 import InspirationalTexts from '~/components/textMessage'
 import Team from '~/components/team'
 import Teaser from '~/components/teaser'
+import Terms from '~/components/terms'
 import MyStatsig from '../my-statsig'
+import PrivacyPolicy from '~/components/privacy'
 
 export const meta: MetaFunction = () => {
     return [
@@ -137,18 +139,8 @@ export default function Index() {
         <div className='dark:bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,hsla(var(--primary)_/_30%),#ffffff00)]'>
             <MyStatsig>
                 <Navbar />
-                <Hero />
-
-                {/* <Cms /> */}
-                {/* <InspirationalTexts /> */}
-                <Teaser />
-                <Product />
-                <Services />
-                <Tech />
-                <Banner />
-                <Team />
-                <FAQs />
-                <Contact />
+                {/* <Hero /> */}
+                <PrivacyPolicy />
                 <Footer />
             </MyStatsig>
         </div>

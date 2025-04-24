@@ -38,7 +38,10 @@ const Contact = () => {
     }
 
     return (
-        <section className='mx-auto mt-48 flex max-w-7xl flex-col items-center gap-20 px-5 lg:flex-row'>
+        <section
+            id='contact'
+            className='mx-auto mt-48 flex max-w-7xl flex-col items-center gap-20 px-5 lg:flex-row'
+        >
             <motion.div
                 className='mx-auto flex max-w-2xl flex-grow basis-0 flex-col gap-6'
                 variants={animateUp}

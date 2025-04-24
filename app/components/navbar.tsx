@@ -14,11 +14,27 @@ import Saastellar from './icons/saasstellar'
 
 const Navbar = () => {
     const [theme, setTheme] = useTheme()
+
+    const themeOptions = [
+        { value: 'zinc', label: 'Zinco', colorClass: 'bg-zinc-600' },
+        { value: 'slate', label: 'Ardósia', colorClass: 'bg-slate-600' },
+        { value: 'stone', label: 'Pedra', colorClass: 'bg-stone-600' },
+        { value: 'gray', label: 'Cinza', colorClass: 'bg-gray-600' },
+        { value: 'neutral', label: 'Neutro', colorClass: 'bg-neutral-600' },
+        { value: 'red', label: 'Vermelho', colorClass: 'bg-red-600' },
+        { value: 'rose', label: 'Rosa', colorClass: 'bg-rose-600' },
+        { value: 'orange', label: 'Laranja', colorClass: 'bg-orange-600' },
+        { value: 'green', label: 'Verde', colorClass: 'bg-green-600' },
+        { value: 'blue', label: 'Azul', colorClass: 'bg-blue-600' },
+        { value: 'yellow', label: 'Amarelo', colorClass: 'bg-yellow-600' },
+        { value: 'violet', label: 'Violeta', colorClass: 'bg-violet-600' },
+    ]
+
     return (
         <div className='px-5 py-2'>
             <nav className='mx-auto flex max-w-7xl items-center justify-between'>
+                {/* Logo */}
                 <Link to='/' className='flex items-center gap-2'>
-                    {/* <img src={saasstellar} alt='' width={28} height={26} /> */}
                     <Saastellar
                         aria-label='saasstellar logo'
                         linearFrom='text-primary'
@@ -43,7 +59,32 @@ const Navbar = () => {
                         Muffins Corp.
                     </span>
                 </Link>
+
+                {/* Links de Navegação */}
+                {/* <div className='hidden items-center gap-6 md:flex'>
+                    <Link
+                        to='/about'
+                        className='text-sm font-medium text-primary hover:underline'
+                    >
+                        Sobre Nós
+                    </Link>
+                    <Link
+                        to='/services'
+                        className='text-sm font-medium text-primary hover:underline'
+                    >
+                        Serviços
+                    </Link>
+                    <Link
+                        to='/contact'
+                        className='text-sm font-medium text-primary hover:underline'
+                    >
+                        Contato
+                    </Link>
+                </div> */}
+
+                {/* Ações do Usuário */}
                 <div className='flex items-center gap-5'>
+                    {/* GitHub Link */}
                     <a
                         href='https://github.com/muffinscorp'
                         target='_blank'
@@ -53,10 +94,12 @@ const Navbar = () => {
                     >
                         <GithubIcon className='h-5 w-5' />
                     </a>
+
+                    {/* Seleção de Tema */}
                     <Select
-                        onValueChange={(theme: ThemeName) => {
-                            changeTheme(theme)
-                            setTheme(theme)
+                        onValueChange={(value: ThemeName) => {
+                            changeTheme(value)
+                            setTheme(value)
                         }}
                         value={theme}
                     >
@@ -66,79 +109,20 @@ const Navbar = () => {
                         >
                             <SelectValue placeholder='Personalizar' />
                         </SelectTrigger>
-                        <SelectContent className=''>
-                            <SelectItem value='zinc'>
-                                <span className='pointer-events-none flex items-center gap-2'>
-                                    <span className='h-4 w-4 rounded-full bg-zinc-600 p-1'></span>{' '}
-                                    <span>Zinco</span>
-                                </span>
-                            </SelectItem>
-                            <SelectItem value='slate'>
-                                <span className='pointer-events-none flex items-center gap-2'>
-                                    <span className='h-4 w-4 rounded-full bg-slate-600 p-1'></span>{' '}
-                                    <span>Ardosia</span>
-                                </span>
-                            </SelectItem>
-                            <SelectItem value='stone'>
-                                <span className='pointer-events-none flex items-center gap-2'>
-                                    <span className='h-4 w-4 rounded-full bg-stone-600 p-1'></span>{' '}
-                                    <span>Pedra</span>
-                                </span>
-                            </SelectItem>
-                            <SelectItem value='gray'>
-                                <span className='flex items-center gap-2'>
-                                    <span className='h-4 w-4 rounded-full bg-gray-600 p-1'></span>{' '}
-                                    <span>Cinza</span>
-                                </span>
-                            </SelectItem>
-                            <SelectItem value='neutral'>
-                                <span className='flex items-center gap-2'>
-                                    <span className='h-4 w-4 rounded-full bg-neutral-600 p-1'></span>{' '}
-                                    <span>Neutro</span>
-                                </span>
-                            </SelectItem>
-                            <SelectItem value='red'>
-                                <span className='flex items-center gap-2'>
-                                    <span className='h-4 w-4 rounded-full bg-red-600 p-1'></span>{' '}
-                                    <span>Vermelho</span>
-                                </span>
-                            </SelectItem>
-                            <SelectItem value='rose'>
-                                <span className='flex items-center gap-2'>
-                                    <span className='h-4 w-4 rounded-full bg-rose-600 p-1'></span>{' '}
-                                    <span>Rosa</span>
-                                </span>
-                            </SelectItem>
-                            <SelectItem value='orange'>
-                                <span className='flex items-center gap-2'>
-                                    <span className='h-4 w-4 rounded-full bg-orange-600 p-1'></span>{' '}
-                                    <span>Laranja</span>
-                                </span>
-                            </SelectItem>
-                            <SelectItem value='green'>
-                                <span className='flex items-center gap-2'>
-                                    <span className='h-4 w-4 rounded-full bg-green-600 p-1'></span>{' '}
-                                    <span>Verde</span>
-                                </span>
-                            </SelectItem>
-                            <SelectItem value='blue'>
-                                <span className='flex items-center gap-2'>
-                                    <span className='h-4 w-4 rounded-full bg-blue-600 p-1'></span>{' '}
-                                    <span>Azul</span>
-                                </span>
-                            </SelectItem>
-                            <SelectItem value='yellow'>
-                                <span className='flex items-center gap-2'>
-                                    <span className='h-4 w-4 rounded-full bg-yellow-600 p-1'></span>{' '}
-                                    <span>Amarelo</span>
-                                </span>
-                            </SelectItem>
-                            <SelectItem value='violet'>
-                                <span className='flex items-center gap-2'>
-                                    <span className='h-4 w-4 rounded-full bg-violet-600 p-1'></span>{' '}
-                                    <span>Violeta</span>
-                                </span>
-                            </SelectItem>
+                        <SelectContent>
+                            {themeOptions.map((option) => (
+                                <SelectItem
+                                    key={option.value}
+                                    value={option.value}
+                                >
+                                    <span className='flex items-center gap-2'>
+                                        <span
+                                            className={`h-4 w-4 rounded-full ${option.colorClass}`}
+                                        ></span>
+                                        <span>{option.label}</span>
+                                    </span>
+                                </SelectItem>
+                            ))}
                         </SelectContent>
                     </Select>
                 </div>
