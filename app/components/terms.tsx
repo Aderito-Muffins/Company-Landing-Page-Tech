@@ -14,14 +14,13 @@ const Terms = () => {
                 <p className='text-sm leading-relaxed'>
                     Estes Termos e Condições de Uso ("Termos") constituem um
                     acordo legalmente vinculativo entre você ("Usuário") e a
-                    Muffins Corp. ("Nós", "Nosso"), uma empresa registrada sob
-                    as leis internacionais de comércio e tecnologia. Ao acessar
-                    ou utilizar qualquer um de nossos produtos e serviços,
-                    incluindo, mas não se limitando ao Muffins AI, à Muffins
-                    eCommerce Platform e nossos serviços de desenvolvimento de
-                    software (coletivamente, "Serviços"), você reconhece que
-                    leu, compreendeu e concorda em ficar vinculado por estes
-                    Termos em sua totalidade, bem como por nossa Política de
+                    Muffins Corp. ("Nós", "Nosso"), Ao acessar ou utilizar
+                    qualquer um de nossos produtos e serviços, incluindo, mas
+                    não se limitando ao Muffins AI, à Muffins eCommerce Platform
+                    e nossos serviços de desenvolvimento de software
+                    (coletivamente, "Serviços"), você reconhece que leu,
+                    compreendeu e concorda em ficar vinculado por estes Termos
+                    em sua totalidade, bem como por nossa Política de
                     Privacidade e quaisquer outras políticas aplicáveis. Caso
                     não concorde com qualquer disposição destes Termos, você
                     está expressamente proibido de utilizar nossos Serviços.
