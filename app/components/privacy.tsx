@@ -323,10 +323,7 @@ const PrivacyPolicy = () => {
                     Para informações detalhadas sobre os tipos de cookies que
                     utilizamos, seus propósitos e como gerenciá-los, consulte
                     nossa{' '}
-                    <a
-                        href='/cookie-policy'
-                        className='text-primary hover:underline'
-                    >
+                    <a href='/cookies' className='text-primary hover:underline'>
                         Política de Cookies
                     </a>
                     .
