@@ -15,17 +15,12 @@ const Footer = () => {
                     <div className='mb-4 flex flex-col space-y-2'>
                         <h3 className='font-semibold'>Navegação</h3>
                         <a
-                            href='https://ai.muffinscorp.com'
+                            href='/'
                             className='text-sm text-primary hover:underline'
                         >
-                            Sobre Muffins AI
+                            Inicio
                         </a>
-                        <a
-                            href='https://ecommerce.muffinscorp.com'
-                            className='text-sm text-primary hover:underline'
-                        >
-                            Sobre Muffins e-Commerce
-                        </a>
+
                         <a
                             href='/#services'
                             className='text-sm text-primary hover:underline'
@@ -37,6 +32,18 @@ const Footer = () => {
                             className='text-sm text-primary hover:underline'
                         >
                             Contato
+                        </a>
+                        <a
+                            href='https://ai.muffinscorp.com'
+                            className='text-sm text-primary hover:underline'
+                        >
+                            Sobre Muffins AI
+                        </a>
+                        <a
+                            href='https://ecommerce.muffinscorp.com'
+                            className='text-sm text-primary hover:underline'
+                        >
+                            Sobre Muffins e-Commerce
                         </a>
                     </div>
 
