@@ -25,25 +25,25 @@ export default function MyStatsig({ children }: { children: React.ReactNode }) {
     return (
         <StatsigProvider
             client={client}
-            loadingComponent={
-                <div
-                    className='dark:bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,hsla(var(--primary)_/_30%),#ffffff00)]'
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        height: '100vh',
-                        backgroundColor: '#000', // Ajuste conforme necessário
-                    }}
-                >
-                    <Pinwheel
-                        size='35'
-                        stroke='3.5'
-                        speed='0.9'
-                        color='white'
-                    />
-                </div>
-            }
+            // loadingComponent={
+            //     <div
+            //         className='dark:bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,hsla(var(--primary)_/_30%),#ffffff00)]'
+            //         style={{
+            //             display: 'flex',
+            //             justifyContent: 'center',
+            //             alignItems: 'center',
+            //             height: '100vh',
+            //             backgroundColor: '#000', // Ajuste conforme necessário
+            //         }}
+            //     >
+            //         <Pinwheel
+            //             size='35'
+            //             stroke='3.5'
+            //             speed='0.9'
+            //             color='white'
+            //         />
+            //     </div>
+            // }
         >
             {children}
         </StatsigProvider>

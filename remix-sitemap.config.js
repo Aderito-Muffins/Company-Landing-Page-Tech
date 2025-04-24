@@ -1,5 +1,5 @@
 /** @type {import('remix-sitemap').Config} */
 export default {
-    siteUrl: 'https://saasstellar.nader.run',
+    siteUrl: 'https://www.muffinscorp.com',
     generateRobotsTxt: true,
 }
