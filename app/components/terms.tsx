@@ -17,14 +17,14 @@ const Terms = () => {
                     Muffins Corp. ("Nós", "Nosso"), uma empresa registrada sob
                     as leis internacionais de comércio e tecnologia. Ao acessar
                     ou utilizar qualquer um de nossos produtos e serviços,
-                    incluindo, mas não se limitando ao Muffins AI e à Muffins
-                    eCommerce Platform (coletivamente, "Serviços"), você
-                    reconhece que leu, compreendeu e concorda em ficar vinculado
-                    por estes Termos em sua totalidade, bem como por nossa
-                    Política de Privacidade e quaisquer outras políticas
-                    aplicáveis. Caso não concorde com qualquer disposição destes
-                    Termos, você está expressamente proibido de utilizar nossos
-                    Serviços.
+                    incluindo, mas não se limitando ao Muffins AI, à Muffins
+                    eCommerce Platform e nossos serviços de desenvolvimento de
+                    software (coletivamente, "Serviços"), você reconhece que
+                    leu, compreendeu e concorda em ficar vinculado por estes
+                    Termos em sua totalidade, bem como por nossa Política de
+                    Privacidade e quaisquer outras políticas aplicáveis. Caso
+                    não concorde com qualquer disposição destes Termos, você
+                    está expressamente proibido de utilizar nossos Serviços.
                 </p>
             </section>
 
@@ -49,7 +49,7 @@ const Terms = () => {
                 <h3 className='mb-3 text-lg font-medium'>
                     2.2 Muffins eCommerce Platform
                 </h3>
-                <p className='text-sm leading-relaxed'>
+                <p className='mb-4 text-sm leading-relaxed'>
                     A Muffins eCommerce Platform é uma solução tecnológica
                     abrangente para operações de comércio eletrônico, oferecendo
                     infraestrutura de hospedagem, sistemas de gestão de pedidos,
@@ -61,6 +61,23 @@ const Terms = () => {
                     internacionais aplicáveis, incluindo, mas não se limitando
                     a, leis de proteção ao consumidor, regulamentações de
                     comércio eletrônico e diretrizes de privacidade de dados.
+                </p>
+                <h3 className='mb-3 text-lg font-medium'>
+                    2.3 Serviços de Desenvolvimento de Software
+                </h3>
+                <p className='text-sm leading-relaxed'>
+                    A Muffins Corp. oferece serviços profissionais de
+                    desenvolvimento de software sob medida, incluindo criação de
+                    websites, desenvolvimento de APIs, sistemas web e mobile, e
+                    soluções de software empresarial. Todos os projetos são
+                    desenvolvidos de acordo com as especificações acordadas com
+                    o cliente e sujeitos a contratos específicos de prestação de
+                    serviços. O cliente mantém todos os direitos sobre o código
+                    fonte e produtos entregues, exceto quando componentes de
+                    terceiros ou licenças específicas se aplicarem. A Muffins
+                    Corp. se reserva o direito de utilizar trabalhos realizados
+                    (de forma anônima e genérica) em seu portfólio e materiais
+                    promocionais.
                 </p>
             </section>
 
@@ -107,7 +124,6 @@ const Terms = () => {
                         Utilizar os Serviços para atividades fraudulentas,
                         enganosas ou ilegais
                     </li>
-
                     <li className='mb-2'>
                         Distribuir malware, vírus ou qualquer outro código
                         destrutivo
