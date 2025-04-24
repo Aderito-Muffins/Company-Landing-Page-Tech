@@ -13,7 +13,7 @@ import InspirationalTexts from '~/components/textMessage'
 import Team from '~/components/team'
 import Teaser from '~/components/teaser'
 import Terms from '~/components/terms'
-import MyStatsig from '../my-statsig'
+
 import PrivacyPolicy from '~/components/privacy'
 import CookiePolicy from '~/components/cookies'
 
@@ -138,12 +138,10 @@ export const meta: MetaFunction = () => {
 export default function Index() {
     return (
         <div className='dark:bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,hsla(var(--primary)_/_30%),#ffffff00)]'>
-            <MyStatsig>
-                <Navbar />
-                {/* <Hero /> */}
-                <CookiePolicy />
-                <Footer />
-            </MyStatsig>
+            <Navbar />
+            {/* <Hero /> */}
+            <CookiePolicy />
+            <Footer />
         </div>
     )
 }

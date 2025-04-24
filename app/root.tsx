@@ -15,7 +15,6 @@ import { useEffect } from 'react' // Substituído useLayoutEffect por useEffect
 import { changeTheme, getTheme } from './hooks/use-theme'
 import { HighlightInit } from '@highlight-run/remix/client'
 import { json } from '@remix-run/node'
-import MyStatsig from './my-statsig'
 
 export const links: LinksFunction = () => [
     { rel: 'stylesheet', href: stylesheet },
