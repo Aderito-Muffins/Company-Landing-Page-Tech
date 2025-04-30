@@ -12,7 +12,7 @@ import eduardoAvatar from '../assets/akil.jpeg'
 const teamData: TeamCardProps[] = [
     {
         name: 'Adérito Muffins',
-        position: 'CEO & Fundador',
+        position: 'Co-Fundador, CEO',
         description:
             'Líder focado em inovação e crescimento, responsável por transformar ideias em realidade e impulsionar a Muffins Corp.',
         avatar: (
@@ -44,7 +44,7 @@ const teamData: TeamCardProps[] = [
     },
     {
         name: 'Eduardo Mufume Jr.',
-        position: 'Co-Fundador, Designer Gráfico / Gestor de Marketing',
+        position: 'Co-Fundador, Designer Gráfico, Gestor de Marketing',
         description:
             'Responsável pelo design gráfico e estratégias de marketing, criando uma identidade visual forte e conectando a marca ao público.',
         avatar: (
