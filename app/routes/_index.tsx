@@ -15,11 +15,11 @@ import Teaser from '~/components/teaser'
 
 export const meta: MetaFunction = () => {
     return [
-        { title: 'Muffins Corp. | Tech que entrega' },
+        { title: 'Muffins Corp.' },
         {
             name: 'description',
             content:
-                'Muffins Corp. | Software inteligente para negócios que não aceitam o status quo. Desenvolvemos SaaS com AI, automação sem código e arquitetura cloud-native. Para quem quer resultados, não migalhas. | Tecnologia que escala, sem burocracia.',
+                'Software inteligente para negócios que não aceitam o status quo. Desenvolvemos SaaS com AI, automação sem código e arquitetura cloud-native. Para quem quer resultados, não migalhas. | Tecnologia que escala, sem burocracia.',
         },
         {
             name: 'keywords',
