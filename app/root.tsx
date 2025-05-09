@@ -28,6 +28,30 @@ export async function loader() {
     })
 }
 
+/**
+ * The root component of the Remix app.
+ *
+ * This component is responsible for rendering the entire app, including the
+ * HTML document, the Remix router, and the Highlight monitoring script.
+ *
+ * The component uses the `useLoaderData` hook to get the environment variables
+ * from the loader and pass them to the `HighlightInit` component.
+ *
+ * The component also uses the `useEffect` hook to change the theme of the app
+ * when the user changes the theme preference.
+ *
+ * The component renders the following components:
+ *
+ * - `html` - the root HTML element of the app
+ * - `head` - the head section of the HTML document
+ * - `HighlightInit` - the Highlight monitoring script
+ * - `body` - the body section of the HTML document
+ * - `Outlet` - the Remix router outlet
+ * - `ScrollRestoration` - the Remix scroll restoration component
+ * - `Scripts` - the Remix scripts component
+ * - `TailwindIndicator` - the Tailwind indicator component
+ * - `Analytics` - the Vercel analytics component (only rendered in production)
+ */
 export default function App() {
     const { ENV } = useLoaderData<typeof loader>()
     useEffect(() => {
@@ -67,6 +91,132 @@ export default function App() {
                 />
                 <Meta />
                 <Links />
+                <script type='application/ld+json'>
+                    {JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'Organization',
+                        name: 'Muffins Corp.',
+                        description:
+                            'Transformando ideias em soluções digitais.',
+                        url: 'https://www.muffinscorp.com',
+                        logo: 'https://www.muffinscorp.com/apple-touch-icon.png',
+                        foundingDate: '2024',
+                        founders: [
+                            {
+                                '@type': 'Person',
+                                name: 'Aderito Muffins',
+                            },
+                            {
+                                '@type': 'Person',
+                                name: 'Adilson Muffins',
+                            },
+                            {
+                                '@type': 'Person',
+                                name: 'Eduardo Mufume Jr.',
+                            },
+                        ],
+
+                        address: {
+                            '@type': 'PostalAddress',
+                            streetAddress: 'Maxaquene, Maputo',
+                            addressLocality: 'Maputo',
+                            addressRegion: 'Maputo',
+                            postalCode: '1102',
+                            addressCountry: 'Mozambique',
+                        },
+                        contactPoint: [
+                            {
+                                '@type': 'ContactPoint',
+                                contactType: 'customer service',
+                                email: 'contact@muffinscorp.com',
+                                areaServed: 'Global',
+                            },
+                        ],
+                        sameAs: [
+                            'https://www.facebook.com/muffinscorporation',
+                            'https://www.linkedin.com/company/muffinscorp',
+                            'https://www.instagram.com/muffinscorp',
+                        ],
+                        makesOffer: [
+                            {
+                                '@type': 'Product',
+                                name: 'Muffins AI',
+                                description:
+                                    'Solução avançada de análise de dados e chatbot inteligente para automação de atendimento e insights empresariais.',
+                                url: 'https://ai.muffinscorp.com',
+                                offeredBy: {
+                                    '@type': 'Organization',
+                                    name: 'Muffins Corp.',
+                                },
+                                category: 'SoftwareApplication',
+                                applicationCategory: 'BusinessApplication',
+                                operatingSystem: 'WebApplication',
+                            },
+                            {
+                                '@type': 'Product',
+                                name: 'Muffins e-Commerce',
+                                description:
+                                    'Solução completa para e-commerce com gestão de pedidos, pagamentos integrados e ferramentas de marketing digital.',
+                                url: 'https://ecommerce.muffinscorp.com',
+                                offeredBy: {
+                                    '@type': 'Organization',
+                                    name: 'Muffins Corp.',
+                                },
+                                category: 'SoftwareApplication',
+                                applicationCategory: 'BusinessApplication',
+                                operatingSystem: 'WebApplication',
+                            },
+                        ],
+                        brand: [
+                            {
+                                '@type': 'Brand',
+                                name: 'Muffins AI',
+                                description:
+                                    'Plataforma de inteligência artificial para análise de dados e chatbots inteligentes.',
+                                url: 'https://ai.muffinscorp.com',
+                            },
+                            {
+                                '@type': 'Brand',
+                                name: 'Muffins e-Commerce',
+                                description:
+                                    'Solução completa para lojas virtuais e gestão de e-commerce.',
+                                url: 'https://ecommerce.muffinscorp.com',
+                            },
+                        ],
+                    })}
+                </script>
+                <script type='application/ld+json'>
+                    {JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'BreadcrumbList',
+                        itemListElement: [
+                            {
+                                '@type': 'ListItem',
+                                position: 1,
+                                name: 'Muffins AI',
+                                item: 'https://ai.muffinscorp.com',
+                            },
+                            {
+                                '@type': 'ListItem',
+                                position: 3,
+                                name: 'Muffins AI Chatbot',
+                                item: 'https://chat.muffinscorp.com',
+                            },
+                            {
+                                '@type': 'ListItem',
+                                position: 3,
+                                name: 'Muffins AI Platform',
+                                item: 'https://platform.muffinscorp.com',
+                            },
+                            {
+                                '@type': 'ListItem',
+                                position: 2,
+                                name: 'Muffins e-Commerce',
+                                item: 'https://ecommerce.muffinscorp.com',
+                            },
+                        ],
+                    })}
+                </script>
             </head>
 
             <body className='relative overflow-x-hidden bg-background font-dm antialiased'>
