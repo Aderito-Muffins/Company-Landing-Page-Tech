@@ -15,25 +15,21 @@ import Teaser from '~/components/teaser'
 
 export const meta: MetaFunction = () => {
     return [
-        { title: 'Muffins Corp.' },
+        { title: 'Muffins Corp. | Tech que entrega' },
         {
             name: 'description',
             content:
-                'Muffins Corp. oferece soluções SaaS inovadoras e desenvolvimento de software personalizado para empresas. Melhore a produtividade, otimize operações e impulsione a inovação com nossas soluções. | Muffins Corp. provides cutting-edge SaaS solutions and custom software development for businesses. Improve productivity, optimize operations, and drive innovation with our solutions.',
+                'Muffins Corp. | Software inteligente para negócios que não aceitam o status quo. Desenvolvemos SaaS com AI, automação sem código e arquitetura cloud-native. Para quem quer resultados, não migalhas. | Tecnologia que escala, sem burocracia.',
         },
         {
             name: 'keywords',
             content:
-                'soluções SaaS,Muffins Corp,Muffins AI, Muffins Store, Aderito Muffins,Muffins e-Commerce,chatBot, desenvolvimento de software personalizado, inovação empresarial, otimização de fluxo de trabalho, software baseado na nuvem, ferramentas de produtividade, decisões baseadas em dados, crescimento empresarial, ferramentas de eficiência, desenvolvimento de software, plataforma SaaS, fluxos de trabalho contínuos, eficiência empresarial, estratégias de crescimento, soluções na nuvem, software empresarial, soluções tecnológicas, transformação digital | SaaS solutions, custom software development, business innovation, workflow optimization, cloud-based software, productivity tools, data-driven decisions, business growth, efficiency tools, software development, SaaS platform, seamless workflows, business efficiency, growth strategies, cloud solutions, enterprise software, technology solutions, digital transformation.',
+                'SaaS com AI, automação sem código, Muffins Corp, cloud-native, low-code, software escalável, AI para negócios, integração de APIs, tecnologia sem burocracia, Muffins AI, Muffins Store, Muffins e-Commerce, chatbot inteligente, devops automatizado, deploy contínuo, software empresarial, transformação digital, eficiência operacional, plataforma SaaS, ferramentas de produtividade, dados em tempo real',
         },
-        {
-            name: 'robots',
-            content: 'index, follow',
-        },
-        {
-            name: 'author',
-            content: 'Muffins Corp.',
-        },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'author', content: 'Muffins Corp.' },
+
+        // Favicons & PWA (Modern Stack)
         {
             tagName: 'link',
             rel: 'shortcut icon',
@@ -60,74 +56,45 @@ export const meta: MetaFunction = () => {
             sizes: '16x16',
             href: '/favicon-16x16.png',
         },
-        {
-            tagName: 'link',
-            rel: 'manifest',
-            href: '/site.webmanifest',
-        },
+        { tagName: 'link', rel: 'manifest', href: '/site.webmanifest' },
         {
             tagName: 'link',
             rel: 'mask-icon',
             href: '/safari-pinned-tab.svg',
             color: '#5bbad5',
         },
-        {
-            name: 'msapplication-TileColor',
-            content: '#da532c',
-        },
-        {
-            name: 'theme-color',
-            content: '#000000',
-        },
-        {
-            property: 'og:title',
-            content:
-                'Muffins Corp. - Soluções SaaS e Software Personalizado para Empresas | Muffins Corp. - SaaS Solutions and Custom Software for Businesses',
-        },
+        { name: 'msapplication-TileColor', content: '#da532c' },
+        { name: 'theme-color', content: '#000000' },
+
+        // Open Graph (Social SEO Elite)
+        { property: 'og:title', content: 'Muffins Corp. | Tech que entrega' },
         {
             property: 'og:description',
             content:
-                'Descubra como a Muffins Corp. pode ajudar a otimizar suas operações, melhorar a produtividade e impulsionar a inovação com nossos serviços de desenvolvimento de software e soluções SaaS. | Discover how Muffins Corp. can help you streamline operations, enhance productivity, and drive innovation with our custom software development and SaaS solutions.',
+                'Software inteligente para negócios que não aceitam o status quo. SaaS com AI, automação sem código e cloud-native. Resultados, não migalhas.',
         },
         {
             property: 'og:image',
-            name: 'og:image',
-            content: 'https://muffinscorp.com/muffins-og-image.png',
+            content: 'https://muffinscorp.com/og-image.jpg',
         },
-        {
-            property: 'og:url',
-            content: 'https://muffinscorp.com/',
-        },
-        {
-            property: 'og:type',
-            content: 'website',
-        },
-        {
-            name: 'twitter:card',
-            content: 'summary_large_image',
-        },
-        {
-            name: 'twitter:title',
-            content:
-                'Muffins Corp. - Soluções SaaS e Software Personalizado para Empresas | Muffins Corp. - SaaS Solutions and Custom Software for Businesses',
-        },
+        { property: 'og:url', content: 'https://muffinscorp.com/' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:locale', content: 'pt_BR' },
+
+        // Twitter/X Cards (Optimized for Engagement)
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Muffins Corp. | Tech que entrega' },
         {
             name: 'twitter:description',
             content:
-                'Descubra como a Muffins Corp. pode ajudar a otimizar suas operações, melhorar a produtividade e impulsionar a inovação com nossos serviços de desenvolvimento de software e soluções SaaS. | Discover how Muffins Corp. can help you streamline operations, enhance productivity, and drive innovation with our custom software development and SaaS solutions.',
+                'Para negócios que não aceitam o status quo. SaaS com AI, automação sem código e arquitetura cloud-native. #TechSemBurocracia',
         },
         {
             name: 'twitter:image',
-            content: 'https://muffinscorp.com/muffins-og-image.png',
+            content: 'https://muffinscorp.com/twitter-card.jpg',
         },
-        {
-            name: 'twitter:url',
-            content: 'https://muffinscorp.com/',
-        },
-        {
-            name: 'twitter:domain',
-            content: 'muffinscorp.com',
-        },
+        { name: 'twitter:site', content: '@MuffinsCorp' },
+        { name: 'twitter:creator', content: '@MuffinsCorp' },
     ]
 }
 
