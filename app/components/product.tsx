@@ -38,7 +38,7 @@ const Product = () => {
                         />
                         <div>
                             <h3 className='text-lg font-semibold'>
-                                Muffins AI (BETA)
+                                Muffins AI
                             </h3>
                             <p className='text-sm text-muted-foreground'>
                                 Automatize tarefas com inteligência.

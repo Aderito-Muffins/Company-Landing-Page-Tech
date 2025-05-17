@@ -93,11 +93,11 @@ export const meta: MetaFunction = () => {
         {
             property: 'og:image',
             name: 'og:image',
-            content: 'https://muffinscorp.com/muffins-og-image.png',
+            content: 'https://www.muffinscorp.com/og-muffins.png',
         },
         {
             property: 'og:url',
-            content: 'https://muffinscorp.com/',
+            content: 'https://www.muffinscorp.com/',
         },
         {
             property: 'og:type',
@@ -119,11 +119,11 @@ export const meta: MetaFunction = () => {
         },
         {
             name: 'twitter:image',
-            content: 'https://muffinscorp.com/muffins-og-image.png',
+            content: 'https://www.muffinscorp.com/og-muffins.png',
         },
         {
             name: 'twitter:url',
-            content: 'https://muffinscorp.com/',
+            content: 'https://www.muffinscorp.com/',
         },
         {
             name: 'twitter:domain',

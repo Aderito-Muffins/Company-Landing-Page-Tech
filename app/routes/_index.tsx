@@ -75,9 +75,9 @@ export const meta: MetaFunction = () => {
         },
         {
             property: 'og:image',
-            content: 'https://muffinscorp.com/og-image.jpg',
+            content: 'https://www.muffinscorp.com/og-muffins.png',
         },
-        { property: 'og:url', content: 'https://muffinscorp.com/' },
+        { property: 'og:url', content: 'https://www.muffinscorp.com/' },
         { property: 'og:type', content: 'website' },
         { property: 'og:locale', content: 'pt_BR' },
 
@@ -91,7 +91,7 @@ export const meta: MetaFunction = () => {
         },
         {
             name: 'twitter:image',
-            content: 'https://muffinscorp.com/twitter-card.jpg',
+            content: 'https://www.muffinscorp.com/twitter-card.jpg',
         },
         { name: 'twitter:site', content: '@MuffinsCorp' },
         { name: 'twitter:creator', content: '@MuffinsCorp' },

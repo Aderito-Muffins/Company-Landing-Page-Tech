@@ -191,7 +191,7 @@ export default function App() {
                 <meta property='og:url' content='https://www.muffinscorp.com' />
                 <meta
                     property='og:image'
-                    content='https://www.muffinscorp.com/og-image.jpg'
+                    content='https://www.muffinscorp.com/og-muffins.png'
                 />
                 <meta property='og:site_name' content='Muffins Corp.' />
                 <meta name='twitter:card' content='summary_large_image' />
