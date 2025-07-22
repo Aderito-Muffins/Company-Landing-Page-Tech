@@ -4,6 +4,7 @@ import useTheme from '~/hooks/use-theme'
 import { cn } from '~/lib/utils'
 import muffinsAI from '../assets/muffinsai.png'
 import muffinsEcom from '../assets/muffinse.png'
+import muffinsAgents from '../assets/muffinsagents.png'
 
 const Product = () => {
     const [theme] = useTheme()
@@ -26,41 +27,63 @@ const Product = () => {
                     lugar.
                 </p>
 
-                <div className='mt-4 flex flex-col justify-center gap-6 sm:flex-row'>
-                    <a
-                        href='https://ai.muffinscorp.com'
-                        className='group flex items-center gap-3 rounded-xl border px-5 py-3 shadow transition hover:scale-105 hover:shadow-lg'
-                    >
-                        <img
-                            src={muffinsAI}
-                            alt='Muffins AI'
-                            className='h-12 w-12 rounded-md object-contain transition duration-300 group-hover:scale-110'
-                        />
-                        <div>
-                            <h3 className='text-lg font-semibold'>
-                                Muffins AI
-                            </h3>
-                            <p className='text-sm text-muted-foreground'>
-                                Automatize tarefas com inteligência.
-                            </p>
-                        </div>
-                    </a>
+                <div className='mt-4 flex flex-col items-center'>
+                    {/* Container para os dois primeiros itens (em cima) */}
+                    <div className='flex flex-col justify-center gap-6 sm:flex-row'>
+                        <a
+                            href='https://ai.muffinscorp.com'
+                            className='group flex items-center gap-3 rounded-xl border px-5 py-3 shadow transition hover:scale-105 hover:shadow-lg'
+                        >
+                            <img
+                                src={muffinsAI}
+                                alt='Muffins AI'
+                                className='h-12 w-12 rounded-md object-contain transition duration-300 group-hover:scale-110'
+                            />
+                            <div>
+                                <h3 className='text-lg font-semibold'>
+                                    Muffins AI
+                                </h3>
+                                <p className='text-sm text-muted-foreground'>
+                                    Converse, integre e automatize com IA.
+                                </p>
+                            </div>
+                        </a>
+                        <a
+                            href='https://ecommerce.muffinscorp.com'
+                            className='group flex items-center gap-3 rounded-xl border px-5 py-3 shadow transition hover:scale-105 hover:shadow-lg'
+                        >
+                            <img
+                                src={muffinsEcom}
+                                alt='Muffins e-Commerce'
+                                className='h-12 w-12 rounded-md object-contain transition duration-300 group-hover:scale-110'
+                            />
+                            <div>
+                                <h3 className='text-lg font-semibold'>
+                                    Muffins e-Commerce
+                                </h3>
+                                <p className='text-sm text-muted-foreground'>
+                                    Sua loja online pronta para escalar.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
 
+                    {/* Último item (centralizado em baixo) */}
                     <a
-                        href='https://ecommerce.muffinscorp.com'
-                        className='group flex items-center gap-3 rounded-xl border px-5 py-2 shadow transition hover:scale-105 hover:shadow-lg'
+                        href='https://agents.muffinscorp.com'
+                        className='group mt-6 flex items-center gap-3 rounded-xl border px-5 py-2 shadow transition hover:scale-105 hover:shadow-lg'
                     >
                         <img
-                            src={muffinsEcom}
-                            alt='Muffins E-commerce'
+                            src={muffinsAgents}
+                            alt='Muffins Agents'
                             className='h-12 w-12 rounded-md object-contain transition duration-300 group-hover:scale-110'
                         />
                         <div>
                             <h3 className='text-lg font-semibold'>
-                                Muffins e-Commerce (BETA)
+                                Muffins Agents
                             </h3>
                             <p className='text-sm text-muted-foreground'>
-                                Sua loja online pronta para escalar.
+                                Automatize tarefas jurídicas com IA.
                             </p>
                         </div>
                     </a>

@@ -20,7 +20,7 @@ const faqs = [
     },
     {
         question: 'Quais plataformas a Muffins Corp. detém?',
-        answer: 'A Muffins Corp. controla duas startups: a Muffins Store, uma plataforma de loja Online e MarketPlace e a Muffins e-Commerce Platform, uma plataforma de comércio eletrônico. Além dessas, também somos proprietários de outras soluções inovadoras.',
+        answer: 'A Muffins Corp. controla duas startups: a Muffins AI, uma plataforma de IA e a Muffins Agents, uma plataforma de automação de tarefas jurídicas. Além dessas, também somos proprietários de outras soluções inovadoras.',
     },
     {
         question: 'Como funciona o suporte oferecido pela Muffins Corp.?',
