@@ -12,7 +12,7 @@ import eduardoAvatar from '../assets/akil.jpeg'
 const teamData: TeamCardProps[] = [
     {
         name: 'Adérito Muffins',
-        position: 'Co-Fundador, CEO',
+        position: 'Fundador, Diretor Geral',
         description:
             'Líder focado em inovação e crescimento, responsável por transformar ideias em realidade e impulsionar a Muffins Corp.',
         avatar: (
@@ -28,7 +28,7 @@ const teamData: TeamCardProps[] = [
     },
     {
         name: 'Adilson Muffins',
-        position: 'Co-Fundador, Designer UI/UX',
+        position: 'Co-Fundador, Diretor de Tecnologia',
         description:
             'Responsável pelo design UI/UX, criando experiências intuitivas e interfaces apelativas para os utilizadores.',
         avatar: (

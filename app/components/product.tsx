@@ -49,44 +49,24 @@ const Product = () => {
                             </div>
                         </a>
                         <a
-                            href='https://ecommerce.muffinscorp.com'
+                            href='https://agents.muffinscorp.com'
                             className='group flex items-center gap-3 rounded-xl border px-5 py-3 shadow transition hover:scale-105 hover:shadow-lg'
                         >
                             <img
-                                src={muffinsEcom}
-                                alt='Muffins e-Commerce'
+                                src={muffinsAgents}
+                                alt='Muffins Agents'
                                 className='h-12 w-12 rounded-md object-contain transition duration-300 group-hover:scale-110'
                             />
                             <div>
                                 <h3 className='text-lg font-semibold'>
-                                    Muffins e-Commerce
+                                    Muffins Agents
                                 </h3>
                                 <p className='text-sm text-muted-foreground'>
-                                    Sua loja online pronta para escalar.
+                                    Automatize tarefas jurídicas com IA.
                                 </p>
                             </div>
                         </a>
                     </div>
-
-                    {/* Último item (centralizado em baixo) */}
-                    <a
-                        href='https://agents.muffinscorp.com'
-                        className='group mt-6 flex items-center gap-3 rounded-xl border px-5 py-2 shadow transition hover:scale-105 hover:shadow-lg'
-                    >
-                        <img
-                            src={muffinsAgents}
-                            alt='Muffins Agents'
-                            className='h-12 w-12 rounded-md object-contain transition duration-300 group-hover:scale-110'
-                        />
-                        <div>
-                            <h3 className='text-lg font-semibold'>
-                                Muffins Agents
-                            </h3>
-                            <p className='text-sm text-muted-foreground'>
-                                Automatize tarefas jurídicas com IA.
-                            </p>
-                        </div>
-                    </a>
                 </div>
             </div>
 
