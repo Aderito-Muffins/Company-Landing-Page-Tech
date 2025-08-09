@@ -48,7 +48,7 @@ const Product = () => {
                                 </p>
                             </div>
                         </a>
-                        {/* <a
+                        <a
                             href='https://agents.muffinscorp.com'
                             className='group flex items-center gap-3 rounded-xl border px-5 py-3 shadow transition hover:scale-105 hover:shadow-lg'
                         >
@@ -65,7 +65,7 @@ const Product = () => {
                                     Automatize tarefas jurídicas com IA.
                                 </p>
                             </div>
-                        </a> */}
+                        </a>
                     </div>
                 </div>
             </div>
