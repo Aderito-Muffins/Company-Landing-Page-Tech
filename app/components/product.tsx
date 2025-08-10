@@ -59,7 +59,7 @@ const Product = () => {
                             />
                             <div>
                                 <h3 className='text-lg font-semibold'>
-                                    Muffins Agents
+                                    Muffins Agents (BETA)
                                 </h3>
                                 <p className='text-sm text-muted-foreground'>
                                     Automatize tarefas jurídicas com IA.
