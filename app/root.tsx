@@ -141,16 +141,16 @@ export default function App() {
                 position: 2,
                 item: {
                     '@type': 'Service',
-                    name: 'Muffins e-Commerce',
+                    name: 'Muffins Agents',
                     description:
-                        'Solução completa para lojas virtuais e gestão de e-commerce.',
+                        'Plataforma de agentes jurídicos para automatização de tarefas legais.',
                     provider: {
                         '@type': 'Organization',
                         name: 'Muffins Corp.',
                     },
-                    serviceType: 'Plataforma de E-commerce',
+                    serviceType: 'Plataforma de Agentes Jurídicos',
                     areaServed: 'Global',
-                    url: 'https://ecommerce.muffinscorp.com',
+                    url: 'https://agents.muffinscorp.com',
                 },
             },
         ],

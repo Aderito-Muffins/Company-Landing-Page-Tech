@@ -40,10 +40,10 @@ const Footer = () => {
                             Sobre Muffins AI
                         </a>
                         <a
-                            href='https://ecommerce.muffinscorp.com'
+                            href='https://agents.muffinscorp.com'
                             className='text-sm text-primary hover:underline'
                         >
-                            Sobre Muffins e-Commerce
+                            Sobre Muffins Agents
                         </a>
                     </div>
 

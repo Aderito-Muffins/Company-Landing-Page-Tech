@@ -25,7 +25,8 @@ export const meta: MetaFunction = () => {
         {
             name: 'keywords',
             content:
-                'soluções SaaS,Muffins Corp,Muffins AI, Muffins Store, Aderito Muffins,Muffins e-Commerce,chatBot, desenvolvimento de software personalizado, inovação empresarial, otimização de fluxo de trabalho, software baseado na nuvem, ferramentas de produtividade, decisões baseadas em dados, crescimento empresarial, ferramentas de eficiência, desenvolvimento de software, plataforma SaaS, fluxos de trabalho contínuos, eficiência empresarial, estratégias de crescimento, soluções na nuvem, software empresarial, soluções tecnológicas, transformação digital | SaaS solutions, custom software development, business innovation, workflow optimization, cloud-based software, productivity tools, data-driven decisions, business growth, efficiency tools, software development, SaaS platform, seamless workflows, business efficiency, growth strategies, cloud solutions, enterprise software, technology solutions, digital transformation.',
+                'Muffins Corp, Muffins AI, Agentes de IA Moçambique, Inteligência Artificial Moçambique, SaaS em Moçambique, Tecnologia Moçambicana, Inovação em Moçambique, Startups em Moçambique, AI SaaS platform, AI chatbot solution, Legal AI agents, African tech startup, AI-powered solutions Africa, AI innovation Mozambique, Language AI Mozambique, AI for businesses Africa, Dicionário online Moçambique, Tradutor Moçambique, Ferramenta educativa Moçambique, Preservação de línguas moçambicanas, Plataforma de aprendizagem Moçambique, Comprar créditos IA, Assinatura Muffins AI, Plataforma SaaS Moçambique, Automação com IA, Chatbot jurídico Moçambique, Soluções digitais para empresas'
+
         },
         {
             name: 'robots',
